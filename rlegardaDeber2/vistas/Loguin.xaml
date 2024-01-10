@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rlegardaDeber2.vistas.Loguin"
+             Title="Loguin">
+    <VerticalStackLayout>
+        <Label 
+            Text="UNIVERSIDAD ISRAEL"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Image Source="https://imagenes.universia.net/gc/net/images/institution/37037_Universidad_Israel.png"  Aspect="AspectFit"/>
+        <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Text="Usuario"
+           FontSize="18"
+          TextColor="Black"
+           Grid.Row="0"
+           Grid.Column="0"/>
+        <Entry x:Name="txtusuario"
+           Placeholder="Ingrse el usuario"
+           Grid.Column="1"/>
+        <Label Text="Contraseña"
+         TextColor="Black"
+            FontSize="18"
+            Grid.Row="1"
+            Grid.Column="0"/>
+        <Entry x:Name="txtpassword"
+        Placeholder="Ingrse la contraseña"
+         Grid.Row="1"
+         Grid.Column="1"
+          IsPassword="True"/>
+    </Grid>
+        <Button x:Name="btnloguin" Text="Loguin" Clicked="btnloguin_Clicked" />
+    </VerticalStackLayout>
+</ContentPage>
